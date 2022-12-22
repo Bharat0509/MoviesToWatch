@@ -1,0 +1,155 @@
+.navbar__container {
+    position: fixed;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    background-color: var(--BG-COLOR-L);
+    padding: 0.95vw 4%;
+    transition: all 500ms ease-in;
+    height: 2.2vw;
+    top: 0;
+    left: 0;
+    width: 92%;
+    z-index: 99;
+    ;
+
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.navbar__settings {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar-logo img {
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+.navbar-links ul {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    line-height: 1.2;
+}
+
+.navbar-links ul li {
+    color: var(--TEXT-COLOT-L);
+    display: flex;
+    align-items: center;
+
+}
+
+.white {
+    color: var(--TEXT-COLOT-L);
+    text-decoration: none;
+}
+
+.navbar-links ul li:hover {
+    color: var(--TEXT-COLOT);
+    cursor: pointer;
+    transition: var(--TRANSITION);
+
+}
+
+
+/* =========================Responsive Design=========================== */
+
+@media screen and (max-width:1000px) {
+    .navbar-links {
+        display: none;
+    }
+
+}
+
+
+
+
+
+/* =====================NAVBAR RIGHT=================== */
+.navbar__right {
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+
+}
+
+.navbar-search input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    width: 15vw;
+    color: white;
+    font-size: 1.125rem;
+
+}
+
+.navbar-search input:focus {
+    width: 22vw;
+    transition: all 300ms ease-in-out;
+
+
+}
+
+.navbar-search:focus {
+    width: 22vw;
+    border-bottom: 1px solid var(--PIMARY-COLOR);
+    transition: all 300ms ease-in-out;
+
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--TEXT-COLOT-L);
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        font-size: 90%;
+    }
+
+    .navbar-search:focus {
+        border-bottom: none;
+
+
+    }
+
+    .navbar-search input:focus {
+
+        border-bottom: 1px solid var(--PIMARY-COLOR);
+        transition: all 200ms ease-in-out;
+
+
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .navbar-search {
+
+        display: none;
+
+    }
+
+}

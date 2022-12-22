@@ -1,0 +1,181 @@
+.cards__container {
+    margin: 0 4%;
+    margin-top: 2.5rem;
+    transition: all 0.6s ease;
+    animation: forwards;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-main {
+    margin: 0 0.5vw;
+}
+
+.card__heading {
+    color: azure;
+    font-weight: 650;
+    font-size: 1.125rem;
+    word-spacing: 0.1rem;
+}
+
+.subcard_cantainer {
+    position: relative;
+    margin: 0rem 0;
+    height: 15vw;
+    width: 12vw;
+    transition: all 500ms ease-in-out;
+}
+
+.card-secondary {
+    transition: all 1s ease;
+    bottom: 0;
+}
+
+.subcard_cantainer:hover {
+    z-index: 1;
+    scale: 1.2;
+}
+
+.card-img {
+    position: absolute;
+}
+
+.card-img img {
+    height: 15vw;
+    width: 12vw;
+    aspect-ratio: calc(36 / 13);
+    border-radius: 0.3rem;
+}
+
+.card-details {
+    box-sizing: border-box;
+    position: absolute;
+    top: 8vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 1.2vw;
+    align-items: flex-start;
+    height: 7vw;
+    transition: all 1s ease-in;
+}
+
+.glassMorphism {
+    background: rgb(0 0 0 / 50%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 0.2vw;
+    transition: all .3s ease-in;
+}
+
+.card-title {
+    font-size: 0.6vw;
+    font-weight: bolder;
+    padding: 0.2vw 0;
+}
+
+.card-para {
+    font-size: 0.5vw;
+    padding: 0.2vw;
+}
+
+.card-play {
+    display: inline-block;
+    margin: 0.1rem 0;
+    cursor: pointer;
+    display: flex;
+    gap: 0.2rem;
+}
+
+.card-play span {
+    font-size: 0.5vw;
+    padding: 0.1vw 0rem;
+}
+
+.card-playlist {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.card-playlist span {
+    font-size: 0.5vw;
+    padding: 0.1vw 0rem;
+}
+
+.add_watchlist {
+    color: red;
+    display: inline-block;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.none {
+   opacity: 0;
+}
+
+.card-secondary {
+    position: relative;
+    scale: 1;
+    transition: all 500ms ease-in;
+    background-color: rgba(35, 35, 59, 0.133);
+    /* overflow: hidden; */
+}
+
+.scale {
+    transition: all 500ms ease-in;
+    scale: 1;
+}
+
+.opa-4 {
+    opacity: 1;
+}
+
+.allMovieRow {
+    display: flex;
+    margin: 1rem 0;
+    transition: all 800ms ease;
+}
+
+.translate {
+    transform: translateX(0);
+}
+
+/* ============================Navigation of Cards===================== */
+.card-navigation-container {
+    position: relative;
+}
+
+.arrow {
+    font-size: 2vw;
+    color: rgb(172, 190, 218);
+    position: absolute;
+    z-index: 100;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.right-arrow {
+    position: relative;
+    top: 7vw;
+    left: -3vw;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+}
+
+.left-arrow {
+    position: relative;
+    z-index: 1;
+    top: -11vw;
+    right: -92vw;
+    transform: translate(180deg);
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+}
+
+.arrow:hover {
+    color: white;
+}
